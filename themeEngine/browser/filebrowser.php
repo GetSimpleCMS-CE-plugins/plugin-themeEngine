@@ -189,9 +189,10 @@ $urlPath = "";
 					// ]]>
 				</script>
 
+				<?php global $SITEURL; ?>
 				<script>
 					function submitLink(e) {
-						let linker = document.querySelectorAll('.images img')[e].getAttribute('data-src');
+						let linker = document.querySelectorAll('.images img')[e].getAttribute('data-src').replace('<?php echo $SITEURL; ?>', '');
 						console.log(linker);
 						window.opener.document.querySelector(`input[data-id="<?php echo $_GET['func']; ?>"]`).value = linker;
 						window.close();

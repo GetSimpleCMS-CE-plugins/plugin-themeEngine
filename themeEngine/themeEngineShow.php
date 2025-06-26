@@ -88,6 +88,7 @@
 		display: flex;
 		gap: 10px;
 		margin: 10px 0;
+		flex-wrap:wrap;
 	}
 </style>
 
@@ -135,7 +136,7 @@
 			<input style="display:none" name="option_dropdown[]" >';
 
 			if ($row['type'] == 'text' || $row['type'] == 'date') {
-				echo '<input type="' . $row['type'] . '" class="te-text" name="value[]" value="' . $row['value'] . '">';
+				echo '<textarea type="' . $row['type'] . '" class="te-text" name="value[]" style="height:40px">'.$row['value'].'</textarea>';
 			}
 
 			if ($row['type'] == 'color') {
