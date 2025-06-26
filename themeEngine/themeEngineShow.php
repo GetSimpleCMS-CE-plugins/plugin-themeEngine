@@ -301,7 +301,7 @@
 			}
 
 			$db->close();
-			echo '<meta http-equiv="refresh" content="0;url=' . htmlspecialchars($SITEURL . $GSADMIN . '/load.php?id=themeEngine&settings&success=updated', ENT_QUOTES, 'UTF-8') . '">';
+			echo '<meta http-equiv="refresh" content="0;url=' . htmlspecialchars($SITEURL . $GSADMIN . '/load.php?id=themeEngine&settings&success=Fields Updated', ENT_QUOTES, 'UTF-8') . '">';
 			exit;
 		} catch (Exception $e) {
 			$db->close();
