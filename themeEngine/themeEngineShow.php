@@ -117,6 +117,7 @@
 
 		global $SITEURL;
 		global $GSADMIN;
+		global $USR;
 
 		$db = new SQLite3(GSDATAOTHERPATH . 'themeEngine.db');
 
