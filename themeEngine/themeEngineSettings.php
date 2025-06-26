@@ -43,7 +43,7 @@ if (isset($_GET['delete_id'])) {
 		$stmt->execute();
 
 		$db->close();
-		echo '<meta http-equiv="refresh" content="0;url=' . htmlspecialchars($SITEURL . $GSADMIN . '/load.php?id=themeEngine&success=deleted') . '">';
+		echo '<meta http-equiv="refresh" content="0;url=' . htmlspecialchars($SITEURL . $GSADMIN . '/load.php?id=themeEngine&success=Field Deleted') . '">';
 		exit;
 	} catch (Exception $e) {
 		$db->close();
