@@ -210,8 +210,10 @@ if (isset($_POST['saveToDB'])) {
 	$db->close();
 	?>
 </div>
-<button class="btn-te-de">Add New Theme Field to Top</button>
+<div class="" style="position:sticky;top:0;z-index:999;top:0;background:#fff;padding:10px;">
+	<button class="btn-te-de">Add New Theme Field to Top</button>
 <button class="btn-te">Add New Theme Field to Bottom</button>
+</div>
 
 <form class="former-te" method="POST">
 	<div id="set-te">

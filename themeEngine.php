@@ -13,7 +13,7 @@ $thisfile = basename(__FILE__, ".php");
 register_plugin(
 	$thisfile, 			//Plugin id
 	'ThemeEngine 😾', 	//Plugin name
-	'1.1',				//Plugin version
+	'1.2',				//Plugin version
 	'CE Team',			//Plugin author
 	'https://getsimple-ce.ovh/donate', //author website
 	'Field settings for your themes. (based on sqlite3)', //Plugin description
